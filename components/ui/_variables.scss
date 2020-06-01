@@ -1,0 +1,59 @@
+//Tamaño de pantalla
+@mixin pantallaCelular {
+    width: 375px;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $azul;
+    font-family: $roboto;
+    font-size: 4rem;
+    height: 10%;
+    margin: 0;
+    width: 100%;
+}
+
+@mixin inputBlock{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    color: $azul;
+
+    label{
+        flex: 0 0 120px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    input{
+        flex:1;
+        padding: .7rem;
+        margin-right: 2%;
+        font-size: 1.6rem;
+    }
+}
+
+@mixin backButton {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: $ptsans;
+}
+
+//Color azul para textos y botones
+$azul: #1359db;
+$fondoBoton: #1359db;
+$roboto:'Roboto Slab', serif;
+$ptsans: 'PT Sans', sans-serif;
+
+
+
+

@@ -1,0 +1,39 @@
+@import "../ui/variables";
+
+.menu {
+    @include pantallaCelular;
+    
+    .title {
+        @include titulo;
+        font-size: 4rem;
+    }
+
+    .form {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .table {
+            display: flex;
+            width: 95%;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.3rem;
+        }
+
+        .botonPagar {
+            margin-top: 10%;
+        }
+    }
+    
+    .botonVolver {
+        @include backButton;
+    }
+
+    @media (min-width: 376px) {
+        max-width: 640px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
